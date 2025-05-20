@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Trajetória do Café Especial</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="main.js"></script>
+
+
+
+
+</head>
+
+
+<body>
+
+  <h1>Trajetória do Café Especial</h1>
+
+  <nav>
+    <ul>
+      <li><a href="#introducao">Introdução</a></li>
+      <li><a href="#cultivo">Cultivo e Variedades</a></li>
+      <li><a href="#poscolheita">Colheita e Pós-Colheita</a></li>
+      <li><a href="#fermentacoes">Fermentações</a></li>
+      <li><a href="#torra">Torra</a></li>
+      <li><a href="#pontuacao">Avaliando o Café</a></li>
+      <li><a href="#extracoes">Métodos de Extração</a></li>
+      <li><a href="#bebidas-classicas">Bebidas Clássicas</a></li>
+
+    </ul>
+  </nav>
+
+  <section id="introducao">
+    <h2>Introdução ao Café Especial</h2>
+    <p>
+      Café especial é definido por sua qualidade superior, com pontuação acima de 80 pontos na escala da Specialty
+      Coffee Association (SCA).
+      Esse tipo de café é cultivado em condições ideais e passa por rigorosos controles de qualidade desde a lavoura até
+      a xícara.
+    </p>
+    <p><strong>Fonte:</strong> <a href="https://sca.coffee" target="_blank">Specialty Coffee Association</a></p>
+
+    <div class="piramide">
+
+      <div class="nivel especial">Especial<br><small>85+</small></div>
+      <div class="nivel gourmet">Gourmet<br><small>80–84</small></div>
+      <div class="nivel superior">Superior<br><small>70–80</small></div>
+      <div class="nivel tradicional">Tradicional<br><small>65–70</small></div>
+      <div class="nivel extraforte">Extra Forte<br><small>&lt; 65</small></div>
+    </div>
+
+  </section>
+
+  <section id="cultivo">
+    <h2>Cultivo e Variedades</h2>
+    <p>
+      O café especial é cultivado em regiões de altitude, com solos ricos e práticas sustentáveis. As variedades mais
+      valorizadas incluem Arábica (como Bourbon, Typica, Geisha) por sua complexidade sensorial.
+    </p>
+
+    <h3>🌍 Principais países produtores de café especial</h3>
+    <ul>
+      <li>🇧🇷 Brasil – 61 milhões de sacas/ano</li>
+      <li>🇨🇴 Colômbia – 11,5 milhões de sacas/ano</li>
+      <li>🇪🇹 Etiópia – 8,3 milhões de sacas/ano</li>
+      <li>🇭🇳 Honduras – 6,2 milhões de sacas/ano</li>
+      <li>🇬🇹 Guatemala – 3,6 milhões de sacas/ano</li>
+    </ul>
+
+    <h3>☕ Maiores consumidores per capita</h3>
+    <ul>
+      <li>🇫🇮 Finlândia – 12 kg/ano</li>
+      <li>🇳🇴 Noruega – 9,9 kg/ano</li>
+      <li>🇮🇸 Islândia – 9 kg/ano</li>
+      <li>🇩🇰 Dinamarca – 8,7 kg/ano</li>
+      <li>🇸🇪 Suécia – 8,2 kg/ano</li>
+    </ul>
+
+    <h3>🇧🇷 Brasil no ranking de consumo</h3>
+    <p>
+      O Brasil é o <strong>maior consumidor de café do mundo em volume</strong>, mas ocupa a <strong>14ª posição em
+        consumo per capita</strong>, com cerca de <strong>6,1 kg por pessoa ao ano</strong>.
+    </p>
+
+    <div class="imagem-genealogica">
+      <img src="imagens/arvoreGenealogicaCafe.jpg" alt="Árvore genealógica do café">
+    </div>
+
+    <p><strong>Fonte:</strong> <a href="https://ico.org/" target="_blank">International Coffee Organization</a>, <a
+        href="https://sca.coffee" target="_blank">SCA</a></p>
+    <h3>📊 Produção anual de café especial (milhões de sacas)</h3>
+    <canvas id="graficoProducao" width="400" height="200"></canvas>
+
+    <h3>📊 Consumo per capita de café (kg/ano)</h3>
+    <canvas id="graficoConsumo" width="400" height="200"></canvas>
+
+
+  </section>
+
+  <section id="poscolheita">
+    <h2>Colheita e Pós-Colheita</h2>
+    <br>
+    <p>
+      A colheita seletiva é essencial — apenas os grãos maduros devem ser colhidos. Após a colheita, o café passa por
+      processos de pós-colheita como:
+    <ul>
+      <li>Natural (seca com a casca)</li>
+      <li>Lavado (remoção completa da mucilagem com água)</li>
+      <li>Honey (mucilagem parcialmente removida)</li>
+      <br>
+      O Tempo do processo de secagem pode variar, o importante é a umidade do grão chegar próximo de 11%.
+      <br>
+    </ul>
+    </p>
+    <br>
+    <p><strong>Fonte:</strong> <a href="https://perfectdailygrind.com" target="_blank">Perfect Daily Grind</a></p>
+  </section>
+
+
+
+
+
+  <section id="fermentacoes">
+    <h2>Fermentações</h2>
+    <p>
+      A fermentação é parte crítica da pós-colheita e pode ser espontânea ou controlada. Tipos comuns:
+    <ul>
+      <li><strong>Anaeróbica:</strong> em tanques fechados sem oxigênio</li>
+      <li><strong>Carbonic maceration:</strong> semelhante à técnica do vinho, usando CO<sub>2</sub></li>
+      <li><strong>Láctica:</strong> com foco no crescimento de bactérias do ácido lático</li>
+    </ul>
+    Essas técnicas influenciam diretamente o perfil sensorial do café.
+    </p>
+    <p><strong>Fonte:</strong> <a href="https://www.baristahustle.com/blog/fermentation-in-coffee-processing/"
+        target="_blank">Barista Hustle</a></p>
+  </section>
+
+  <section id="torra">
+    <h2>Torra</h2>
+    <p>
+      A torra do café transforma os grãos verdes em grãos aromáticos e complexos por meio de reações térmicas e
+      químicas. A curva de torra influencia diretamente o sabor, corpo, acidez e doçura da bebida final.
+    </p><br>
+
+    <h3>🔬 Reações químicas envolvidas na torra</h3><br>
+    <ul>
+      <li><strong>Reação de Maillard:</strong> É uma reação entre açúcares redutores (como glicose e frutose) 
+        e aminoácidos presentes nos grãos. Ela começa a ocorrer por volta de 140 °C e é responsável por boa parte 
+        do aroma e cor marrom do café torrado. Produz centenas de compostos voláteis que contribuem para notas de caramelo,
+         chocolate, nozes, etc.<br><br>
+
+Exemplo simples:
+Quando você coloca cebola numa frigideira quente, ela começa a dourar e exalar um cheiro adocicado — isso também é Maillard.</li><br>
+
+
+      <li><strong>Caramelização:</strong> Envolve a decomposição térmica dos açúcares, especialmente sacarose, sem a presença de 
+        aminoácidos. Acontece em temperaturas entre 160 °C e 190 °C. Produz compostos que reforçam as notas doces, 
+        de caramelo, mel ou até frutas secas, dependendo da intensidade da torra.<br><br>
+
+Exemplo simples:
+Aquele cheiro e cor do açúcar derretendo para virar calda de pudim é resultado da caramelização.</li><br>
+
+
+
+      <li><strong>Pirólise:</strong> É a quebra térmica de moléculas complexas em moléculas menores, sem a presença de oxigênio. 
+        Acontece geralmente acima de 200 °C e marca o momento onde os grãos “estouram” (o primeiro crack).
+         Ela contribui com notas mais intensas e amargas, e é responsável pela liberação de CO₂ e outros gases.<br><br>
+
+Exemplo simples:
+Ao torrar um pedaço de pão até quase queimar, ele libera cheiro forte, escurece rapidamente e fica quebradiço — sinais de pirólise.</li><br>
+      
+
+
+
+ <li><strong>Formação de Gases Voláteis (Desgaseificação)</strong>
+
+Durante a torra, formam-se diversos gases voláteis, principalmente dióxido de carbono (CO₂). Eles ficam presos nos grãos 
+e começam a ser liberados após a torra. Esse fenômeno influencia na frescor do café e no tempo ideal de descanso (degassing), 
+antes da extração.<br><br>
+
+Exemplo simples:
+Já notou que café recém-torrado borbulha muito ao ser moído e coado? É o CO₂ escapando rapidamente.
+
+
+<li><strong>Perda de Umidade e Reações Endo/Exotérmicas</strong>
+
+Os grãos crus têm cerca de 10-12% de umidade. Essa água evapora ao longo da torra, tornando o grão mais leve e oco.
+ Em paralelo, há reações endotérmicas (absorvem calor, como a evaporação da água) e exotérmicas (liberam calor, como a quebra de moléculas).<br><br> Isso influencia diretamente o controle do perfil térmico do processo.
+
+Exemplo simples:
+Ao assar uma batata no forno, ela vai desidratando e depois escurece e doura por fora, mostrando uma combinação dessas reações.
+
+
+
+
+
+
+<li><strong>Degradação dos ácidos clorogênicos:</strong> Os ácidos clorogênicos são antioxidantes presentes em abundância no café verde. 
+  Durante a torra, eles se degradam parcialmente, formando ácido cafeico e ácido quínico, que contribuem para a acidez 
+  e amargor característicos de torra média a escura.<br><br>
+
+Exemplo simples:
+Imagine o sabor de um café mais leve e ácido (torra clara) versus um mais amargo (torra escura): a diferença está na degradação desses ácidos.</li><br>
+    </ul>
+<h3><li><strong>Conclusão</strong></h3> 
+Essas transformações não ocorrem de forma isolada, mas em cadeia, e cada etapa do processo de torra precisa ser controlada 
+com precisão para acentuar os atributos desejados no café. É por isso que o perfil sensorial de um grão depende 
+tanto da curva de torra quanto da matéria-prima usada.<br><br>
+
+
+    <h3>📈 Exemplo de Curva de Torra</h3><br>
+    <p>Segue uma simulação de torra com controle de variáveis importantes:</p>
+
+    <table class="tabela-torra">
+      <thead>
+        <tr>
+          <th>Tempo (min)</th>
+          <th>Temperatura (°C)</th>
+          <th>Fluxo de Ar</th>
+          <th>Energia Aplicada (%)</th>
+          <th>Evento</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>0</td>
+          <td>25</td>
+          <td>Médio</td>
+          <td>100</td>
+          <td>Início da torra</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>100</td>
+          <td>Médio</td>
+          <td>90</td>
+          <td>Aquecimento inicial</td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td>145</td>
+          <td>Médio</td>
+          <td>85</td>
+          <td>Amarelamento</td>
+        </tr>
+        <tr>
+          <td>7</td>
+          <td>170</td>
+          <td>Alto</td>
+          <td>80</td>
+          <td>Pré-caramelização</td>
+        </tr>
+        <tr>
+          <td>9</td>
+          <td>196</td>
+          <td>Alto</td>
+          <td>75</td>
+          <td>1º Crack (expansão)</td>
+        </tr>
+        <tr>
+          <td>11</td>
+          <td>210</td>
+          <td>Alto</td>
+          <td>60</td>
+          <td>Desenvolvimento</td>
+        </tr>
+        <tr>
+          <td>12</td>
+          <td>218</td>
+          <td>Alto</td>
+          <td>0</td>
+          <td>Final da torra</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <img src="imagens/curva-de-torra.jpeg" alt="Curva de torra do café" class="curva-de-torra">
+
+
+
+    <p><strong>Fonte:</strong> SCA (Specialty Coffee Association), livros de química do café, e experiências de mestres
+      de torra.</p>
+  </section>
+
+  <section id="pontuacao">
+  <h2>Pontuação do Café</h2>
+
+  <h3>📋 Avaliação do Café Verde (Green Grading)</h3>
+  <p>
+    A SCA estabelece um protocolo rigoroso para avaliar o café antes da torra, conhecido como <strong>Green Grading</strong>. O avaliador analisa 350 g de grãos crus e classifica com base nos seguintes critérios:
+  </p>
+  <ul>
+    <li><strong>Defeitos Primários:</strong> grãos pretos, ardidos, fermentados, etc.</li>
+    <li><strong>Defeitos Secundários:</strong> cascas, grãos quebrados, cortados, verdes, etc.</li>
+    <li><strong>Umidade:</strong> ideal entre 10% e 12%</li>
+    <li><strong>Densidade:</strong> cafés de maior qualidade tendem a ter maior densidade</li>
+    <li><strong>Tamanho da peneira:</strong> tamanhos uniformes favorecem uma torra mais precisa</li>
+  </ul>
+  <p>
+    Um café é considerado <strong>Especial</strong> se tiver <strong>zero defeitos primários</strong> e no máximo 5 defeitos secundários nessa amostra.
+  </p>
+
+  <h3>☕ Avaliação Sensorial (Cupping)</h3>
+  <p>
+    Após a torra leve (SCA exige torra padrão para prova), o café é avaliado sensorialmente em sessões de cupping (prova de café) com base em 10 critérios:
+  </p>
+  <ol>
+    <li>Fragrância/Aroma</li>
+    <li>Sabor</li>
+    <li>Pós-sabor</li>
+    <li>Acidez</li>
+    <li>Corpo</li>
+    <li>Uniformidade</li>
+    <li>Doçura</li>
+    <li>Equilíbrio</li>
+    <li>Ausência de defeitos</li>
+    <li>Nota geral (Overall)</li>
+  </ol>
+  <p>
+    Cada item recebe uma nota de 6 a 10 pontos, sendo a soma deles a <strong>pontuação final do café</strong>. Um café especial deve pontuar no mínimo <strong>80 pontos</strong>.
+  </p>
+
+  <h3>🎨 Roda de Aromas e Sabores do Café</h3>
+  <p>
+    A <strong>Roda de Aromas</strong> da SCA é uma ferramenta usada por profissionais para descrever com precisão os sabores presentes no café. Ela é baseada em centenas de compostos aromáticos identificados em cafés especiais.
+  </p>
+
+  <div class="roda-aromas">
+    <img src="imagens/roda-aromas-sabores.jpg" alt="Roda de Aromas do Café da SCA" style="max-width: 100%; height: auto;">
+  </div>
+
+  <p><strong>Fontes:</strong> <a href="https://sca.coffee/research/protocols-best-practices" target="_blank">SCA Protocols & Standards</a>, <a href="https://worldcoffeeresearch.org/" target="_blank">World Coffee Research</a></p>
+</section>
+
+
+
+  <section id="extracoes">
+    <h2>Métodos de Extração</h2><br>
+    <p>
+      A extração correta revela todo o potencial do café especial. Métodos manuais e pressurizados proporcionam
+      diferentes perfis sensoriais. A seguir, conheça os principais:
+    </p><br>
+
+    <h3>☕ Métodos de preparo</h3><br>
+    <ul>
+      <li>
+        <strong>Clever:</strong> Criado nos anos 2000 por fabricantes taiwaneses, combina imersão total com filtragem
+        por papel. Oferece corpo médio, doçura destacada e baixa acidez. Ideal para iniciantes pela facilidade e
+        consistência.
+      </li><br>
+      <li>
+        <strong>Chemex:</strong> Desenvolvido em 1941 por Peter Schlumbohm, químico alemão. Usa filtros de papel espesso
+        que resultam em uma bebida limpa, leve e com acidez ressaltada. Design elegante e funcional.
+      </li><br>
+      <li>
+        <strong>Koar:</strong> Método brasileiro criado por Marcus Viana em 2019. Possui ranhuras que aumentam a
+        extração uniforme. Produz café encorpado, doce e com finalização prolongada.
+      </li><br>
+      <li>
+        <strong>V60:</strong> Criado pela empresa japonesa Hario em 2004. Seu formato cônico e ranhuras espirais
+        favorecem controle de fluxo e extração precisa. Proporciona bebida limpa, com acidez e notas florais/frutadas.
+      </li><br>
+      <li>
+        <strong>Aeropress:</strong> Inventado em 2005 por Alan Adler, engenheiro americano. Combina pressão manual com
+        imersão curta. Versátil, produz café encorpado com baixa acidez e perfil suave.
+      </li><br>
+      <li>
+        <strong>French Press:</strong> Patenteada em 1929 por Attilio Calimani, um designer italiano. Método de imersão
+        total com êmbolo metálico. Entrega café denso, oleoso e com corpo elevado.
+      </li><br>
+      <li>
+        <strong>Espresso:</strong> Desenvolvido na Itália no início do século XX, com patente de Luigi Bezzera em 1901.
+        Utiliza água pressurizada (9 bar) em alta temperatura por curto tempo (25–30s). Resulta em bebida intensa,
+        encorpada, com crema e grande complexidade sensorial.
+      </li><br>
+    </ul>
+
+    <p><strong>Fonte:</strong> <a href="https://www.homegrounds.co/brewing-guides/" target="_blank">Home Grounds Brewing
+        Guides</a>, manuais de fabricantes, registros de patentes e publicações da SCA.</p>
+  </section>
+  
+
+
+
+
+
+  <section id="bebidas-classicas">
+    <h2>Bebidas Clássicas</h2>
+    <p>Estas são as bebidas tradicionais preparadas a partir do espresso, cada uma com características distintas:</p>
+
+    <ul>
+      <li>
+        <strong>Espresso:</strong> Uma dose concentrada de café (25–30 ml) extraída sob alta pressão (9 bar) em cerca de
+        25 segundos. É a base para muitas outras bebidas.
+      </li>
+      <li>
+        <strong>Ristretto:</strong> Uma versão mais curta do espresso, utilizando a mesma quantidade de café, mas com
+        metade da água, resultando em uma bebida mais concentrada e encorpada.
+      </li>
+      <li>
+        <strong>Macchiato:</strong> Espresso "manchado" com uma pequena quantidade de leite vaporizado, oferecendo um
+        equilíbrio entre a intensidade do café e a suavidade do leite.
+      </li>
+      <li>
+        <strong>Cappuccino:</strong> Composto por 1/3 de espresso, 1/3 de leite vaporizado e 1/3 de espuma de leite.
+        Tradicionalmente servido em uma xícara de 150 ml.
+      </li>
+      <li>
+        <strong>Latte:</strong> Uma dose de espresso com uma maior proporção de leite vaporizado e uma fina camada de
+        espuma. Geralmente servido em copos de 240 ml ou mais.
+      </li>
+      <li>
+        <strong>Flat White:</strong> Originário da Austrália e Nova Zelândia, é semelhante ao latte, mas com menos leite
+        e uma microespuma mais fina, resultando em uma bebida mais intensa.
+      </li>
+    </ul>
+
+    <p><strong>Fontes:</strong> <a href="https://worldcoffeeevents.org/" target="_blank">World Coffee Events</a>, <a
+        href="https://en.wikipedia.org/wiki/Ristretto" target="_blank">Wikipedia - Ristretto</a>, <a
+        href="https://en.wikipedia.org/wiki/Flat_white" target="_blank">Wikipedia - Flat White</a></p>
+  </section>
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="main.js"></script> <!-- seu script com os gráficos -->
+
+  <!--Rodapé-->
+
+<footer style="background-color: #222; color: #fff; padding: 20px; text-align: center;">
+  <p>Desenvolvido por <strong>Humberto Clementino Silva</strong> - Gerente Operacional / Barista</p>
+  
+  <div style="margin: 10px 0;">
+    <a href="https://instagram.com/humbarista" target="_blank" style="margin: 0 10px; color: #fff; text-decoration: none;">
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#fff" viewBox="0 0 24 24" style="vertical-align: middle;">
+        <path d="M12 2.163c3.204 0 3.584.012 4.85.07 1.366.062 2.633.335 3.608 1.31.975.975 1.248 2.242 1.31 3.608.058 1.266.07 1.646.07 4.85s-.012 3.584-.07 4.85c-.062 1.366-.335 2.633-1.31 3.608-.975.975-2.242 1.248-3.608 1.31-1.266.058-1.646.07-4.85.07s-3.584-.012-4.85-.07c-1.366-.062-2.633-.335-3.608-1.31-.975-.975-1.248-2.242-1.31-3.608C2.175 15.747 2.163 15.367 2.163 12s.012-3.584.07-4.85c.062-1.366.335-2.633 1.31-3.608.975-.975 2.242-1.248 3.608-1.31C8.416 2.175 8.796 2.163 12 2.163zm0-2.163C8.741 0 8.332.013 7.052.072 5.775.13 4.562.443 3.515 1.49 2.468 2.537 2.155 3.75 2.097 5.027.013 8.332 0 8.741 0 12s.013 3.668.072 4.948c.058 1.277.371 2.49 1.418 3.537 1.047 1.047 2.26 1.36 3.537 1.418C8.332 23.987 8.741 24 12 24s3.668-.013 4.948-.072c1.277-.058 2.49-.371 3.537-1.418 1.047-1.047 1.36-2.26 1.418-3.537.059-1.28.072-1.689.072-4.948s-.013-3.668-.072-4.948c-.058-1.277-.371-2.49-1.418-3.537-1.047-1.047-2.26-1.36-3.537-1.418C15.668.013 15.259 0 12 0z"/>
+        <path d="M12 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zm0 10.162a4 4 0 1 1 0-8 4 4 0 0 1 0 8z"/>
+        <circle cx="18.406" cy="5.594" r="1.44"/>
+      </svg>
+      @Humbarista | @sterna.mercadaodasflores
+    </a>
+  </div>
+
+  <div style="margin: 10px 0;">
+    <a href="https://www.youtube.com/@Humbarista" target="_blank" style="color: #fff; text-decoration: none;">
+      <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="#fff" viewBox="0 0 24 24" style="vertical-align: middle;">
+        <path d="M23.498 6.186a2.956 2.956 0 0 0-2.08-2.09C19.687 3.5 12 3.5 12 3.5s-7.687 0-9.418.596a2.956 2.956 0 0 0-2.08 2.09C0 7.937 0 12 0 12s0 4.063.502 5.814a2.956 2.956 0 0 0 2.08 2.09C4.313 20.5 12 20.5 12 20.5s7.687 0 9.418-.596a2.956 2.956 0 0 0 2.08-2.09C24 16.063 24 12 24 12s0-4.063-.502-5.814zM9.75 15.02V8.98l6.25 3.02-6.25 3.02z"/>
+      </svg>
+      Humbarista
+    </a>
+  </div>
+</footer>
+
+
+</body>
+
+</html>

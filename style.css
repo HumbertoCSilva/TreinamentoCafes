@@ -1,0 +1,252 @@
+
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  body {
+    background-color: #f9f9f9;
+    color: #333;
+    padding: 40px 20px;
+    max-width: 900px;
+    margin: auto;
+  }
+
+  h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #222;
+  }
+
+  nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin-bottom: 30px;
+    border-bottom: 2px solid #ccc;
+  }
+
+  nav ul li {
+    margin-right: 10px;
+  }
+
+  nav ul li a {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #555;
+    text-decoration: none;
+    border-radius: 5px 5px 0 0;
+    background-color: #eaeaea;
+    transition: all 0.3s ease;
+  }
+
+  nav ul li a.active,
+  nav ul li a:hover {
+    background-color: #ffffff;
+    color: #000;
+    font-weight: bold;
+    border-bottom: 2px solid #fff;
+  }
+
+  section {
+    display: none;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 0 0 10px 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    margin-bottom: 30px;
+  }
+
+  section.active {
+    display: block;
+  }
+
+  ul {
+    padding-left: 20px;
+    margin-top: 10px;
+  }
+
+  a {
+    color: #0077cc;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+
+  .piramide {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  animation: fadeInUp 1s ease-in-out;
+}
+
+.nivel {
+  width: 60%;
+  text-align: center;
+  padding: 12px;
+  margin: 4px 0;
+  border-radius: 8px;
+  color: #fff;
+  font-weight: bold;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeUp 1s ease forwards;
+}
+
+.nivel small {
+  display: block;
+  font-weight: normal;
+  font-size: 0.9em;
+}
+
+
+.nivel.extraforte { background-color: #4e342e; animation-delay: 0.2s; }
+.nivel.tradicional { background-color: #6d4c41; animation-delay: 0.4s; }
+.nivel.superior { background-color: #8d6e63; animation-delay: 0.6s; }
+.nivel.gourmet { background-color: #a1887f; animation-delay: 0.8s; }
+.nivel.especial { background-color: #c5e1a5; color: #333; animation-delay: 1s; }
+
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.imagem-genealogica {
+  margin-top: 30px;
+  text-align: center;
+  animation: fadeIn 2s ease-in-out;
+}
+
+.imagem-genealogica img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  opacity: 0;
+  transform: scale(0.95);
+  animation: fadeZoomIn 1.5s ease forwards;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.imagem-genealogica img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+
+@keyframes fadeZoomIn {
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.tabela-torra {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0 10px; /* Espaçamento vertical entre linhas */
+  margin-top: 1rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.tabela-torra th,
+.tabela-torra td {
+  border: 1px solid #ddd;
+  padding: 12px 16px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.tabela-torra th {
+  background-color: #f5f5f5;
+  font-weight: bold;
+}
+
+.tabela-torra tr {
+  background-color: #fff;
+}
+
+.tabela-torra tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.curva-de-torra {
+  display: block;
+  margin: 20px auto;
+  border-collapse: collapse;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  padding: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  max-width: 100%;
+  height: auto;
+  border-radius: 6px;
+}
+
+
+
+#bebidas-classicas {
+  padding: 40px 20px;
+  background-color: #fefbf5;
+  border-top: 2px solid #d1bfa7;
+  border-bottom: 2px solid #d1bfa7;
+  font-family: 'Segoe UI', sans-serif;
+  color: #3e2f1c;
+}
+
+#bebidas-classicas h2 {
+  font-size: 2em;
+  color: #6b4f3b;
+  border-left: 6px solid #b89c7d;
+  padding-left: 12px;
+  margin-bottom: 20px;
+}
+
+#bebidas-classicas p {
+  font-size: 1.1em;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+#bebidas-classicas ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+#bebidas-classicas li {
+  background-color: #fff8ee;
+  border-left: 5px solid #c6a87d;
+  margin-bottom: 15px;
+  padding: 15px;
+  border-radius: 6px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+}
+
+#bebidas-classicas li strong {
+  color: #5b3b1d;
+  font-size: 1.15em;
+}
+
+#bebidas-classicas a {
+  color: #8b5e3c;
+  text-decoration: underline;
+}
+
+#bebidas-classicas a:hover {
+  color: #b48155;
+  text-decoration: n
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+
