@@ -89,3 +89,17 @@
     });
   }
 });
+
+document.getElementById('btnSalvarPDF')?.addEventListener('click', function () {
+  const elemento = document.body; // ou outro container, como document.getElementById("conteudo")
+
+  const opcoes = {
+    margin:       0.5,
+    filename:     'pagina_cafe.pdf',
+    image:        { type: 'jpeg', quality: 0.98 },
+    html2canvas:  { scale: 2 },
+    jsPDF:        { unit: 'in', format: 'a4', orientation: 'portrait' }
+  };
+
+  html2pdf().set(opcoes).from(elemento).save();
+});

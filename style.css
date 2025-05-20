@@ -248,5 +248,30 @@ html {
   scroll-behavior: smooth;
 }
 
+.footer {
+  background-color: #222;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer p {
+  margin: 0;
+}
+
+.social-link {
+  margin: 10px 0;
+}
+
+.social-link a {
+  margin: 0 10px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.social-link svg {
+  vertical-align: middle;
+  margin-right: 5px;
+}
 
 
